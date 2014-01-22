@@ -26,7 +26,7 @@ News In Stack Widget plugin is developed flexible and simple to provide you maxi
 
 == Frequently Asked Questions ==
 
-Do you have questions or issues with Contact Form 7? Use these support channels appropriately.
+Do you have questions or issues with News In Stack Widget? Use these support channels appropriately.
 
 1. [Docs, FAQ and Support](http://bobrowski.ru/news-in-stack-widget/)
 
