@@ -3,7 +3,7 @@
 Plugin Name: News in Stack Widget
 
 Description: Adds a widget that can display recent posts from multiple categories or from custom post types.
-Version: 1.3
+Version: 1.3.1
 Author: Eugen Bobrowski
 Author URI: http://bobrowski.ru
 */
@@ -29,13 +29,16 @@ class News_In_Stack_Widget extends WP_Widget
 
         extract($args);
 
+        $defaults = $this->returnDefaults();
+
+        $instance = wp_parse_args($instance, $defaults);
 
         $title = apply_filters('widget_title', empty($instance['title']) ? 'Recent Posts' : $instance['title'], $instance, $this->id_base);
 
-        if (!$template = $instance["template"]) $template = $this->defaultTemplate;
-        $styles = isset($instance['styles']) ? ($instance['styles']) : $this->defaultStyles;
-        $script = isset($instance['script']) ? ($instance['script']) : $this->defaultScript;
-        $cssclass = isset($instance['cssclass']) ? ($instance['cssclass']) : $this->defaultCSSClass;
+        $template = $instance["template"];
+        $styles = $instance['styles'];
+        $script = $instance['script'];
+        $cssclass = ($instance['cssclass'] === null) ? $defaults['cssclass'] : $instance['cssclass'];
 
         if (!$number = absint($instance['number'])) $number = 5;
 
@@ -400,7 +403,7 @@ class News_In_Stack_Widget extends WP_Widget
             'cats' => NULL,
             'sort_by' => 'date',
             'asc_sort_order' => false,
-            'cssclass' =>  'recent-post-item2',
+            'cssclass' =>  'recent-post-item',
             'template' =>  '<a href="{postlink}" rel="bookmark" title="Permanent link to {title}" class="full-item-link">
 {thumb}
 <span class="post-title">{title}</span>

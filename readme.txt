@@ -4,7 +4,7 @@ Donate link: http://bobrowski.ru/
 Tags: recent posts, category, categories, tag, tags, widget, post list, exclude, include
 Requires at least: 3.0
 Tested up to: 4.1.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,10 @@ Do you have questions or issues with News In Stack Widget? Use these support cha
 
 1. [Docs, FAQ and Support](http://bobrowski.ru/news-in-stack-widget/)
 
+= The widget styles is broken after update to the 1.3 version  =
+
+In the widget configuration dialog change class to <code>recent-post-item</code>
+
 == Screenshots ==
 
 1. Default stack view
@@ -38,6 +42,11 @@ Do you have questions or issues with News In Stack Widget? Use these support cha
 4. The widget configuration dialog.
 
 == Changelog ==
+
+= 1.3.1 =
+
+* Change default item css class
+* Fixed bugs after update to 1.3
 
 = 1.3 =
 
@@ -50,4 +59,11 @@ Do you have questions or issues with News In Stack Widget? Use these support cha
 * Initial public release
 
 == Upgrade Notice ==
-* No Upgrade Notice so far.
+
+= 1.3.1 =
+
+* Fixed bug with not updated css class in widget configuration dialog. Please update!
+
+= 1.3.0 =
+
+* Please change item css class after update
