@@ -1,14 +1,14 @@
 === News In Stack Widget ===
 Contributors: eugenbobrowski
 Donate link: http://bobrowski.ru/
-Tags: recent posts, category, categories, tag, tags, widget, post list, exclude, include
+Tags: recent posts, category, categories, tag, tags, widget, post list, exclude, include, excerpt, thumbnail
 Requires at least: 3.0
 Tested up to: 4.1.1
 Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Just another recent post widget. Simple but flexible.
+The most simple and customizable way to display your WordPress posts with thumbnails.
 
 == Description ==
 
